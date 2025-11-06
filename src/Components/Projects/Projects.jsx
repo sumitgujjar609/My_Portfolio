@@ -5,12 +5,22 @@ import WeatherImg from "../../assets/weather-img.avif";
 import TodolistImg from "../../assets/to-do-list-img.webp";
 import BootstrapImg from "../../assets/bootstrap-img.jpg";
 
-
 const Projects = () => {
   return (
-    <div id="Projects" className="p-5 md:p-0 md:px-24  text-white ">
-   
-      <div className="md:py-8 md:px-8 flex flex-wrap gap-4">
+    <div
+      id="Projects"
+      className="p-5 md:p-0 md:px-24 text-white bg-[#171d32] min-h-screen"
+    >
+      {/* 🔹 Section Heading */}
+      <div className="text-center mt-10 mb-10">
+        <h2 className="text-4xl font-bold inline-block border-b-4 border-indigo-500 pb-2">
+          Projects
+        </h2>
+       
+      </div>
+
+      {/* 🔹 Project Cards */}
+      <div className="md:py-8 md:px-8 flex flex-wrap gap-6 justify-center">
         <ProjectCard
           Img={SamsungImg}
           title="Samsung Clone"

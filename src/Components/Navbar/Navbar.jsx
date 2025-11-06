@@ -14,7 +14,7 @@ const Navbar = () => {
       <ul
         className={`${menu ? "flex" : "hidden"} 
         flex-col items-center space-y-4
-        py-4 font-semibold bg-black bg-opacity-60 rounded-xl
+        py-4 font-semibold bg-gray-700 z-10  rounded-xl
         absolute top-16 left-1/2 transform -translate-x-1/2 w-[80%]
         md:flex md:flex-row md:gap-y-0 md:static md:py-0
         md:space-y-0 md:w-auto md:bg-transparent md:ml-auto md:text-lg md:justify-end`}

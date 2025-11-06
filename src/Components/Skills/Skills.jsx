@@ -1,12 +1,38 @@
 import React from "react";
-import {FaHtml5,FaCss3,FaJs,FaReact,FaNode,FaGithub,} from "react-icons/fa";
-import {SiTailwindcss,SiBootstrap,SiExpress,SiMongodb,SiVercel,SiNetlify,SiVscodium,SiPostman,SiNpm,} from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaNode,
+  FaGithub,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiBootstrap,
+  SiExpress,
+  SiMongodb,
+  SiVercel,
+  SiNetlify,
+  SiVscodium,
+  SiPostman,
+  SiNpm,
+} from "react-icons/si";
 
 const Skills = () => {
   return (
-    <section className=" flex flex-col justify-center items-center bg-[#171d32] text-white px-8 overflow-hidden">
-      <div className="grid md:grid-cols-2 gap-14 mt-4 md:gap-6 max-w-6xl w-full">
+    <section
+      id="skills"
+      className="flex flex-col justify-center items-center bg-[#171d32] text-white px-8 py-16 overflow-hidden"
+    >
+      {/* 🔹 Heading Section */}
+      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white relative">
+        My Skills
+        <span className="block w-24 h-1 bg-[#687EFF] mx-auto mt-2 rounded-full"></span>
+      </h2>
 
+      {/* 🔹 Skills Grid Section */}
+      <div className="grid md:grid-cols-2 gap-14 mt-4 md:gap-6 max-w-6xl w-full">
         {/* Frontend Div*/}
         <div>
           <div className="mb-6 inline-block bg-indigo-200/40 border border-indigo-500 text-white px-4 py-1 rounded-full text-sm">
@@ -80,6 +106,7 @@ const Skills = () => {
         </div>
       </div>
 
+      {/* 🔹 Skill Card Style */}
       <style>
         {`
           .skill-card {
@@ -89,7 +116,7 @@ const Skills = () => {
             text-align: center;
             color: white;
             font-size: 14px;
-            transition: 0.3s ease;
+            transition: 0.2s ease;
             border: 1px solid rgba(255,255,255,0.08);
             display: flex;
             flex-direction: column;
