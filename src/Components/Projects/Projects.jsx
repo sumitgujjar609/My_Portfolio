@@ -8,9 +8,9 @@ import BootstrapImg from "../../assets/bootstrap-img.jpg";
 
 const Projects = () => {
   return (
-    <div id="Projects" className="p-10 md:px-24  text-white ">
-      <h1 className="text-2xl md:text-4xl text-white font-bold">Projects</h1>
-      <div className="py-12 px-8 flex flex-wrap gap-5">
+    <div id="Projects" className="p-5 md:p-0 md:px-24  text-white ">
+   
+      <div className="md:py-8 md:px-8 flex flex-wrap gap-4">
         <ProjectCard
           Img={SamsungImg}
           title="Samsung Clone"

@@ -5,7 +5,7 @@ import SumitResume from "../../assets/sumit-resume.pdf"
 
 const Home = () => {
   return (
-    <div className="text-white flex flex-col md:flex-row w-full justify-between items-center p-10 md:p-20 gap-10 ">
+    <div className="text-white flex flex-col md:flex-row w-full justify-between items-center p-10 md:p-20 gap-10  ">
       <div className="md:w-2/4 md:pt-10">
         <TypingText />
         <p className="text-gray-300 mt-3 text-lg">

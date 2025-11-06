@@ -4,55 +4,51 @@ import { FaCode, FaDatabase, FaServer } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div
-      id="About"
-      className="text-white md:flex overflow-hidden items-center md:flex-wrap md:justify-center bg-black/30 shadow-xl mx-0 md:mx-20 rounded-lg p-12"
-    >
-      <div>
-        <h2 className="text-2xl md:text-4xl font-bold mb-6">About Me</h2>
+    <section className=" flex flex-col justify-center items-center bg-[#171d32] text-white px-6 py-16">
+      
+      <div className="flex flex-col md:flex-row items-center gap-32 max-w-5xl bg-black/40 p-10 rounded-2xl shadow-lg">
 
-        <div className="md:flex flex-wrap flex-col md:flex-row items-center gap-20">
-          <img className="md:h-80 mb-6 md:mb-0" src={AboutImg} alt="About img" />
-
-          <ul className="space-y-6">
-
-            <li className="flex gap-4">
-              <FaCode size={30} className="mt-1 text-[#687EFF]" />
-              <span className="w-96">
-                <h1 className="text-xl md:text-2xl font-semibold">Frontend Developer</h1>
-                <p className="text-sm md:text-md text-gray-300">
-                  Strong in building modern UI using React, Tailwind CSS, and Framer Motion.
-                  I focus on responsive, fast, and smooth user interactions.
-                </p>
-              </span>
-            </li>
-
-            <li className="flex gap-4">
-              <FaServer size={30} className="mt-1 text-[#4ECCA3]" />
-              <span className="w-96">
-                <h1 className="text-xl md:text-2xl font-semibold">Backend Developer</h1>
-                <p className="text-sm md:text-md text-gray-300">
-                  Experience with Node.js and Express to build secure and scalable backend APIs.
-                </p>
-              </span>
-            </li>
-
-            <li className="flex gap-4">
-              <FaDatabase size={30} className="mt-1 text-[#62CDFF]" />
-              <span className="w-96">
-                <h1 className="text-xl md:text-2xl font-semibold">Database Handling</h1>
-                <p className="text-sm md:text-md text-gray-300">
-                  Skilled in working with MongoDB, creating efficient database structures, and connecting databases with backend APIs for real-world applications.
-                </p>
-              </span>
-            </li>
-
-         
-
-          </ul>
+        <div className="flex justify-center">
+          <img
+            src={AboutImg}
+            alt="Profile"
+            className="w-56 h-56 md:w-72 md:h-72 object-cover rounded-full border-4 border-[#687EFF] shadow-xl"
+          />
         </div>
+
+        <ul className="space-y-8">
+          <li className="flex gap-4">
+            <FaCode size={30} className="mt-1 text-[#687EFF]" />
+            <span className="max-w-md">
+              <h1 className="text-xl md:text-2xl font-semibold">Frontend Developer</h1>
+              <p className="text-sm md:text-base text-gray-300">
+                Expert in building interactive, fast, and responsive UIs using React, Tailwind CSS, and Framer Motion.
+              </p>
+            </span>
+          </li>
+
+          <li className="flex gap-4">
+            <FaServer size={30} className="mt-1 text-[#4ECCA3]" />
+            <span className="max-w-md">
+              <h1 className="text-xl md:text-2xl font-semibold">Backend Developer</h1>
+              <p className="text-sm md:text-base text-gray-300">
+                Experienced in creating RESTful APIs with Node.js and Express, focusing on scalability and security.
+              </p>
+            </span>
+          </li>
+
+          <li className="flex gap-4">
+            <FaDatabase size={30} className="mt-1 text-[#62CDFF]" />
+            <span className="max-w-md">
+              <h1 className="text-xl md:text-2xl font-semibold">Database Handling</h1>
+              <p className="text-sm md:text-base text-gray-300">
+                Skilled in MongoDB, schema design, and optimizing database performance for real-world applications.
+              </p>
+            </span>
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
   );
 };
 
