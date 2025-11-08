@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between md:items-center bg-slate-600 md:gap-96 text-white px-10 md:pt-4 pt-8 relative">
-      <span className="md:text-2xl font-bold tracking-wide">
+      <span className="md:text-2xl relative bottom-1 md:bottom-0 font-bold tracking-wide">
         Portfolio
       </span>
 
