@@ -4,6 +4,7 @@ import SamsungImg from "../../assets/samsung-clone-img.png";
 import WeatherImg from "../../assets/weather-img.avif";
 import TodolistImg from "../../assets/to-do-list-img.webp";
 import BootstrapImg from "../../assets/bootstrap-img.jpg";
+import CRMImg from "../../assets/crm-img.avif"
 
 const Projects = () => {
   return (
@@ -51,6 +52,15 @@ const Projects = () => {
           main="Bootstrap 5 based responsive website including navbar, cards, grid layout and forms."
           demoLink="https://majestic-gumption-8eb327.netlify.app/"
           codeLink="https://github.com/sumitgujjar609/Sumit-Bootstrap-Project.git"
+        />
+
+        <ProjectCard
+          Img={CRMImg}
+          title="CRM Project"
+          main="Full-stack CRM system built with React, Node.js, Express and MongoDB featuring login, JWT auth, CRUD operations and deployment."
+          demoLink="https://crm-frontend-nu-indol.vercel.app/"
+          codeLink="https://github.com/sumitgujjar609/crm-frontend.git"
+
         />
       </div>
     </div>
